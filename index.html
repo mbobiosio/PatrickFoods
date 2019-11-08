@@ -46,7 +46,7 @@
  gtag('config', 'UA-130165432-');
 </script>
 
-<div class="header" id="logged-out-header" style="display: none">
+<div class="header" id="header" style="display: none">
   <div class="header-on-scroll">
     <div class="header-flex">
       <div class="menu-button" data-ix="open-menu">
@@ -104,94 +104,8 @@
   </div>
 </div>
 
-<div class="header" id="logged-in-header" style="display: none">
-    <div class="header-on-scroll">
-      <div class="header-flex">
-        <div class="menu-button" data-ix="open-menu">
-          <div class="menu-line on-scroll"></div>
-          <div class="menu-line mid on-scroll"></div>
-          <div class="menu-line on-scroll"></div>
-        </div><a href="index.html" class="home-logo _2 w-inline-block"></a></div>
-      <div data-delay="500" class="dropdown w-dropdown">
-        <div class="logged-in-user header-sect dark-green-text w-dropdown-toggle">
-          <div class="icon w-icon-dropdown-toggle"></div>
-          <div class="user-name w-hidden-tiny"></div>
-          <div class="profile-picture"></div>
-        </div>
-        <nav class="dropdown-list w-dropdown-list">
-          <a href="dashboard.html" class="dropdown-link w-dropdown-link">Go to Dashboard</a>
-          <a href="#" class="dropdown-link w-dropdown-link" onclick="logout()">Logout</a>
-        </nav>
-      </div>
-    </div>
-    <div class="menu">
-      <div class="menu-content">
-        <div class="menu-close" data-ix="close-menu"></div>
-        <div>
-          <a href="index.html" class="menu-link w-inline-block">
-            <h6>Home</h6>
-          </a>
-          <div class="menu-divider menu-pop"></div>
-          <a href="about.html" class="menu-link w-inline-block">
-            <h6>About</h6>
-          </a>
-          <div class="menu-divider menu-pop"></div>
-          <a href="why-agropartnerships.html" class="menu-link w-inline-block">
-            <h6>WHY AGROPARTNERSHIPS</h6>
-          </a>
-          <div class="menu-divider menu-pop"></div>
-          <a href="investments.html" class="menu-link w-inline-block">
-            <h6>FARMS/COMMODITIES</h6>
-          </a>
-          <div class="menu-divider menu-pop"></div>
-          <a href="faq.html" class="menu-link w-inline-block">
-            <h6>FAQ</h6>
-          </a>
-          <div class="menu-divider menu-pop"></div>
-          <a href="help-desk.html" class="menu-link w-inline-block">
-            <h6>Help desk</h6>
-          </a>
-        </div>
-        <div class="menu-footer">
-          <p class="smallest-paragraph grey-text">
-            <a href="tel:+2348098111113" class="menu-sub-link">0809-811-1113</a><br>
-            <a href="tel:+2348098111114" class="menu-sub-link">0809-811-1114</a><br> 
-            <a href="tel:+2349030000395" class="menu-sub-link">0903-000-0395</a><br>
-            <a href="cdn-cgi/l/email-protection.html#98f1f6fef7d8f9ffeaf7e8f9eaecf6fdeaebf0f1e8ebb6fbf7f5a7ebedfaf2fdfbeca5ddf6e9edf1eaf1fdebbdaaa8deeaf7f5bdaaa8cffdfaebf1ecfd" class="menu-sub-link"><span class="__cf_email__" data-cfemail="2a43444c456a4b4d58455a4b585e444f585942435a5904494547">[email&#160;protected]</span></a></p>
-          <p class="smallest-paragraph grey-text top-padding">© <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script> Farmforte. All Rights Reserved</p>
-        </div>
-      </div>
-      <div class="menu-lightbox" data-ix="close-menu"></div>
-    </div>
-    <div class="header-flex">
-      <div class="menu-button" data-ix="open-menu">
-        <div class="menu-line"></div>
-        <div class="menu-line mid"></div>
-        <div class="menu-line"></div>
-      </div><a href="index.html" class="home-logo w-inline-block"></a></div>
-    <div data-delay="500" class="dropdown w-dropdown">
-      <div class="logged-in-user header-sect w-dropdown-toggle">
-        <div class="icon w-icon-dropdown-toggle"></div>
-        <div class="user-name w-hidden-tiny"></div>
-        <div class="profile-picture"></div>
-      </div>
-      <nav class="dropdown-list w-dropdown-list"><a href="dashboard.html" class="dropdown-link w-dropdown-link">Go to Dashboard</a><a href="#" class="dropdown-link w-dropdown-link" onclick="logout()">Logout</a></nav>
-    </div>
-</div>
 <script>
-var token = authBot.parseToken();
-if(token){
-  var header = document.getElementById('logged-in-header');
-  header.style.display = 'flex';
-
-  var nameHolders = header.getElementsByClassName('user-name');
-  for(var i = 0; i < nameHolders.length; i++){
-    // get just the first name
-    nameHolders[i].textContent = token.fullname.split(' ')[0] + ' (' + token.code.toUpperCase() + ')';
-  }
-}
-else document.getElementById('logged-out-header').style.display = 'flex';
-
+document.getElementById('header').style.display = 'flex';
 var menuLinks = document.getElementsByClassName('header-menu');
 for(var i = 0; i < menuLinks.length; i++){
   if((menuLinks[i].getAttribute('href') == window.location.pathname) || (menuLinks[i].getAttribute('href') == "/index" && window.location.pathname == "index.html")){
