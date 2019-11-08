@@ -165,55 +165,16 @@ for(var i = 0; i < menuLinks.length; i++){
     </div>
   </div>
  
-  <div class="home-fourth-block" id="app" v-if="resource && resource.length" v-cloak>
-    <div>
-      <div class="home-title-block">
-        <h1 class="dark-green-text w-hidden-tiny">Farms &amp; Commodities</h1>
-        <h2 class="dark-green-text w-hidden-main w-hidden-medium w-hidden-small"><span class="lemon-green-text">Most Recent</span><br>Farms &amp; Commodities</h2>
-      </div>
-      <div class="recent-farm-wrapper" v-for="row in orderedInvestments">
-          <a v-for="investment in row" :href="`/investments/${investment.code}`" :style="`background-image: url(${investment.picture}) !important`" data-w-id="09fb6390-d3a7-bfcc-8836-00686678234c" class="preview-farm-block demo-commodity w-inline-block">
-            <div class="overlay"></div>
-            <div class="farm-preview-flex">
-              <div class="farm-icon-flex">
-                <div class="farm-icon" v-if="investment.type == 'farm'"></div>
-                <div class="commodity-icon" v-if="investment.type == 'commodity'"></div>
-                <p class="investment-type-text">{{investment.type}}</p>
-              </div>
-              <div class="preview-yield-block">
-                <div>{{ investment.yield }}%</div>
-                <h5>in {{investment.duration}} months</h5>
-              </div>
-            </div>
-            <div class="farm-preview-flex bottom">
-              <div>
-                <div class="preview-farm-inner-block">
-                  <h5 class="white-text">&#8358; {{ formatAmount(investment.price) }} </h5>
-                  <h5 class="orange-text">per unit</h5>
-                </div>
-                <h4 class="white-text no-padding">{{investment.title}}</h4>
-              </div>
-              <div class="sold-out" v-if="investment.units < 1 && investment.status == 'available'">
-                <h6 class="light-green-text no-padding">Sold out</h6>
-              </div>
-              <div class="available" v-else>
-                <h6 class="light-green-text no-padding">{{investment.status}}</h6>
-              </div>
-            </div>
-          </a>
-      </div>
-    </div>
-    <a href="investments.html" class="button lemon-green top-padding w-button">View all</a>
-  </div>
+ 
   <div class="home-seventh-block">
-    <h2 class="dark-green-text"><span class="lemon-green-text">Our Model</span><br>The Value Chain Approach</h2>
+    <h2 class="dark-green-text"><span class="lemon-green-text">Hygiene</span><br>We Pay Extra Attention</h2>
     <div class="value-chain-wrapper">
       <div class="value-chain-inner-flex">
         <div class="value-chain-block">
           <div class="value-icon farming"></div>
           <div>
-            <h5 class="lemon-green-text bold-text">Sustainable<br>Farming<br></h5>
-            <p class="white-text top-padding">We run large scale Modernized farms as Well as work with trained Outgrower farmers.<br></p>
+            <h5 class="lemon-green-text bold-text">Fresh<br>Farming<br></h5>
+            <p class="white-text top-padding">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt temporibus.<br></p>
           </div>
           <div class="value-chain-arrow"></div>
         </div>
@@ -221,7 +182,7 @@ for(var i = 0; i < menuLinks.length; i++){
           <div class="value-icon packaging"></div>
           <div>
             <h5 class="dark-green-text bold-text">Processing &amp;<br>Packaging<br></h5>
-            <p class="white-text top-padding">We add value to raw materials and convert them to world class products.<br></p>
+            <p class="white-text top-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima est repellendus.<br></p>
           </div>
           <div class="value-chain-arrow _2"></div>
         </div>
@@ -229,7 +190,7 @@ for(var i = 0; i < menuLinks.length; i++){
           <div class="value-icon storage"></div>
           <div>
             <h5 class="dark-green-text bold-text">Storage &amp;<br>Logistics<br></h5>
-            <p class="white-text top-padding">We eliminate wastage by deploying world class technology to tackle storage and logistics challenges.<br></p>
+            <p class="white-text top-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus!.<br></p>
           </div>
           <div class="value-chain-arrow _3"></div>
         </div>
@@ -237,16 +198,17 @@ for(var i = 0; i < menuLinks.length; i++){
           <div class="value-icon global"></div>
           <div>
             <h5 class="green-text bold-text">Global<br>Markets<br></h5>
-            <p class="top-padding">We create markets for our produce both locally and globally.<br></p>
+            <p class="top-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></p>
           </div>
         </div>
       </div>
       <div class="value-chain-bottom-block">
-        <h5 class="dark-green-text">The core focus of our business model is playing across the value chain of specific produce type we work with. We take seeds and nurture them into beautiful crops that produce a bountiful harvest which is then processed and packaged into world class products that are sold locally and across the globe.</h5>
-        <p class="top-padding">By playing across the value chain, we take out the middlemen and provide consumers with the best quality at the best prices and still make excellent profits.</p>
+        <h5 class="dark-green-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a autem repudiandae voluptates. Numquam qui nesciunt itaque vero incidunt, quidem debitis maxime nostrum nulla modi doloribus fuga cupiditate unde inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+        <p class="top-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero est accusantium quam saepe esse sequi consectetur perspiciatis tempora illum, dolorem corrupti laboriosam minus? Tempora minus aspernatur eveniet magnam aliquam nihil.</p>
       </div>
     </div>
   </div>
+  
   <div class="home-third-block">
     <div class="home-title-block">
       <h1 class="white-text">How it works</h1>
