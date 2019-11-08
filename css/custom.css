@@ -1,0 +1,20 @@
+.dashboard-content-wrapper.profile {
+    padding: 3vw 5vw;
+    display: flex;
+}
+
+.dashboard-content-wrapper .profile-block {
+    width: 100%;
+    padding: 1vw;
+}
+
+@media (max-width: 767px) {
+    .dashboard-content-wrapper.profile {
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 10vw;
+    }
+    .profile-block.bank {
+        margin-top: 15px;
+    }
+}
