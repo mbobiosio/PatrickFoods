@@ -1171,7 +1171,7 @@ a {
 .farmforte-logo {
   width: 16vw;
   height: 45px;
-  background-image: url('../images/farmforte-logo.svg');
+  background-image: url('../images/farmforte-log.svg');
   background-position: 100% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1221,7 +1221,7 @@ a {
   width: 20vw;
   height: 4vw;
   margin-bottom: 2vw;
-  background-image: url('../images/Agropartnerships-logo.svg');
+  background-image: url('../images/Agropartnerships-log.svg');
   background-position: 0px 0px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1260,7 +1260,7 @@ a {
 }
 
 .curl.cream {
-  background-image: url('../images/curl-light-brown.svg');
+  
 }
 
 .curl.lemon-green {
@@ -2533,14 +2533,14 @@ a {
 .home-logo {
   width: 22vw;
   height: 50px;
-  background-image: url('../images/Agropartnerships-logo-white.svg');
+  background-image: url('../images/Agropartnerships-logo-whit.svg');
   background-position: 0px 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .home-logo._2 {
-  background-image: url('../images/Agropartnerships-logo.svg');
+  background-image: url('../images/Agropartnerships-log.svg');
 }
 
 .header-flex {
