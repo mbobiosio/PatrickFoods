@@ -983,7 +983,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 7.5vw 25vw 260px;
+  padding: 1vw 25vw 260px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3809,8 +3809,7 @@ a {
 }
 
 .home-seventh-block {
-  padding: 10vw 10vw 13vw;
-  background-image: url('../images/ap-illustration-plants.svg');
+  padding: 5vw 10vw 5vw;
   background-position: 90% 100%;
   background-size: 35vw;
   background-repeat: no-repeat;
