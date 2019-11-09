@@ -350,8 +350,8 @@ a {
 }
 
 .hero.home {
-  background-image: -webkit-linear-gradient(270deg, rgba(29, 59, 45, .1), rgba(29, 59, 45, .1)), url('../images/agropartnerships-hero.jpg');
-  background-image: linear-gradient(180deg, rgba(29, 59, 45, .1), rgba(29, 59, 45, .1)), url('../images/agropartnerships-hero.jpg');
+  background-image: -webkit-linear-gradient(270deg, rgba(29, 59, 45, .1), rgba(29, 59, 45, .1)), url('../images/hero-background.jpg');
+  background-image: linear-gradient(180deg, rgba(29, 59, 45, .1), rgba(29, 59, 45, .1)), url('../images/hero-background.jpg');
   background-position: 0px 0px, 50% 0px;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
