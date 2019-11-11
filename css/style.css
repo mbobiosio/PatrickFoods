@@ -343,7 +343,7 @@ a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-image: url('../images/ap-why-hero.png'), url('../images/ap-why-hero-bg.jpg');
+  background-image: url('../images/ap-why-hero-bg.jpg');
   background-position: 0px -94px, 50% 50%;
   background-size: 101%, cover;
   background-repeat: no-repeat, no-repeat;
