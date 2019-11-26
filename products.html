@@ -442,22 +442,6 @@
       </div>
     </div>
   </div>
-<script>
-  var footerTimeLink = document.getElementById("footer-time-link");
-  if (authBot.getToken()) {
-    footerTimeLink.href = 'investments.html';
-    footerTimeLink.textContent = "View Opportunities";
-
-    var hideNodes = document.getElementsByClassName('signed-in-hide');
-    for (var i = 0; i < hideNodes.length; i++) {
-      hideNodes[i].style.display = 'none';
-    }
-  }
-  else {
-    footerTimeLink.href = 'sign-up.html';
-    footerTimeLink.textContent = "Start now";
-  }
-</script>
 
   <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="js/style.js" type="text/javascript"></script>
